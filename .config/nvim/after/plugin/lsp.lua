@@ -54,6 +54,12 @@ require('mason-lspconfig').setup({
                 }
             })
         end,
+        ansiblels = function()
+            require('lspconfig').ansiblels.setup({
+                capabilities = lsp_capabilities,
+                filetypes = { 'yaml', 'yaml', 'ansible' },
+            })
+        end, 
     }
 })
 
