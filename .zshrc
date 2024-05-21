@@ -73,6 +73,7 @@ ZSH_THEME="amuse"
 plugins=(git virtualenv)
 
 source $ZSH/oh-my-zsh.sh
+source /usr/share/nvm/init-nvm.sh
 
 # User configuration
 
@@ -100,6 +101,7 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias vim="nvim"
-source /usr/share/nvm/init-nvm.sh
 alias air="~/go/bin/air"
 alias config='/usr/bin/git --git-dir=/home/nate/.cfg/ --work-tree=/home/nate'
+
+path+=("$HOME/.cargo/bin")

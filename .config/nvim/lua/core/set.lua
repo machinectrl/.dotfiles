@@ -1,8 +1,11 @@
 vim.opt.nu = true
---vim.opt.relativenumber = true
+vim.opt.relativenumber = true
 
 vim.opt.termguicolors = true
-vim.opt.wrap = false
+--vim.opt.wrap = false
+vim.opt.showbreak = ">> "
+vim.opt.linebreak = true
+vim.opt.breakindent = true
 
 vim.opt.tabstop = 4 -- A TAB character looks like 4 spaces
 vim.opt.expandtab = true -- Pressing the TAB key will insert spaces instead of a TAB character
