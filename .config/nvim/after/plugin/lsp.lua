@@ -63,6 +63,11 @@ require('mason-lspconfig').setup({
     }
 })
 
+require("lspconfig")["gdscript"].setup({
+   	name = "godot",
+   	cmd = vim.lsp.rpc.connect("127.0.0.1", "6005"),
+})
+
 local has_words_before = function()
     unpack = unpack or table.unpack
     local line, col = unpack(vim.api.nvim_win_get_cursor(0))
