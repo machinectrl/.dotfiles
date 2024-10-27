@@ -104,7 +104,7 @@ alias vim="nvim"
 alias air="~/go/bin/air"
 alias config='/usr/bin/git --git-dir=/home/nate/.cfg/ --work-tree=/home/nate'
 #alias godot='nohup prime-run /home/nate/Godot/Godot_v4.2.1-stable_linux.x86_64 &'
-alias godot='prime-run /home/nate/Godot/Godot_v4.2.1-stable_linux.x86_64'
+alias godot='prime-run /home/nate/Godot/Godot_v4.3-stable_linux.x86_64'
 alias gvim='nvim --listen /tmp/godot.pipe'
 
 path+=("$HOME/.cargo/bin")

@@ -59,13 +59,14 @@ require('mason-lspconfig').setup({
                 capabilities = lsp_capabilities,
                 filetypes = { 'yaml', 'yaml', 'ansible' },
             })
-        end, 
+        end,
     }
 })
 
 require("lspconfig")["gdscript"].setup({
    	name = "godot",
-   	cmd = vim.lsp.rpc.connect("127.0.0.1", "6005"),
+   	cmd = vim.lsp.rpc.connect("127.0.0.1", 6005),
+    capabilities = lsp_capabilities,
 })
 
 local has_words_before = function()
