@@ -45,4 +45,7 @@ return {
         dependencies = { 'mfussenegger/nvim-dap' }
     },
     { 'github/copilot.vim' },
+    { 'nvim-lualine/lualine.nvim',
+        dependencies = { 'nvim-tree/nvim-web-devicons' }
+    },
 }
