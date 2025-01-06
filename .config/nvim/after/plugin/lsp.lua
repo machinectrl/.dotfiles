@@ -19,6 +19,17 @@ vim.api.nvim_create_autocmd('LspAttach', {
     end
 })
 
+-- zig
+vim.g.zig_fmt_parse_errors = 0
+vim.g.zig_fmt_autosave = 1
+vim.api.nvim_create_autocmd('BufWritePre', {
+    pattern = {"*.zig", "*zon"},
+    callback = function(ev)
+        vim.lsp.buf.format()
+    end
+})
+
+
 local lsp_capabilities = require('cmp_nvim_lsp').default_capabilities()
 
 local luasnip = require("luasnip")
