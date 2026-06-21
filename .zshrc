@@ -8,7 +8,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="amuse"
+ZSH_THEME="robbyrussell"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -105,5 +105,7 @@ alias air="~/go/bin/air"
 alias config='/usr/bin/git --git-dir=/home/nate/.cfg/ --work-tree=/home/nate'
 alias godot='prime-run /home/nate/dev/Godot/Godot_v4.3-stable_linux.x86_64'
 alias gvim='nvim --listen /tmp/godot.pipe'
+alias nw="hyprctl hyprpaper wallpaper 'eDP-1, /home/nate/Pictures/walls/, cover'"
 
 path+=("$HOME/.cargo/bin")
+export PATH="$HOME/.local/bin:$PATH"
